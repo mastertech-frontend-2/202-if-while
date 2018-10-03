@@ -21,7 +21,7 @@ Bônus: Se o empréstimo for aprovado, perguntamos em quantas parcelas ele quer 
 
 Regras para parcela:
 - Parcelamos entre 5 e 24 meses;
-- Mostrar o valor da parcela e a quantidade de parcelas para pagamento;
+- Mostrar o valor da parcela (com taxa de juro composto de 8%) e a quantidade de parcelas para pagamento;
 - Se o valor de parcelas for inválido e o valor for menor que 5, o empréstimo é feito em 5 parcelas;
 - Se o valor de parcelas for inválido e o valor for maior que 24, o empréstimo é feito em 24 parcelas;
 */
