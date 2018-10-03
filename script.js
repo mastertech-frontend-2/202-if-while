@@ -43,4 +43,6 @@ Exemplo de escada de tamanho 3 com degrau "!":
 !
 !!
 !!!
+
+Desafio: Desenhar um losango com o caracter e tamanho definidos pelo usuário
 */
