@@ -14,6 +14,19 @@ else {
         }
         else {
             alert('Parabéns, você foi aprovado para o nosso empréstimo!');
+
+            let parcelas = prompt('Em quantas parcelas você gostaria de pagar seu empréstimo? Nós oferecemos parcelamentos entre 5 e 24 meses.');
+
+            if (parcelas < 5) {
+                parcelas = 5;
+            }
+            else if (parcelas > 24) {
+                parcelas = 24;
+            }
+
+            let valorParcela = (emprestimo * (1 + juro) ** parcelas) / parcelas;
+
+            alert(`Parabéns, você acaba de receber um empréstimo de R$${emprestimo},00. Você deverá pagar esse valor em ${parcelas} de R$${valorParcela.toFixed(2)}.`)
         }
     }
 }
