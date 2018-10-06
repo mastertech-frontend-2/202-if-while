@@ -1,11 +1,11 @@
-let idade = prompt ('Qual sua idade?');
-let renda = prompt('Agora nos diga, por favor, qual sua renda?');
-let emprestimo = prompt('E quanto você gostaria de pegar emprestado?');
+let idade = Number(prompt ('Qual sua idade?'));
+let renda = Number(prompt('Agora nos diga, por favor, qual sua renda?'));
+let emprestimo = Number(prompt('E quanto você gostaria de pegar emprestado?'));
 
 if (idade >= 25 && idade <= 65 && renda >= 1500 && emprestimo >= 1000 && emprestimo <= renda * 10) {
     alert('Parabéns, você foi aprovado para o nosso empréstimo!');
 
-    let parcelas = prompt('Em quantas parcelas você gostaria de pagar seu empréstimo? Nós oferecemos parcelamentos entre 5 e 24 meses.');
+    let parcelas = Number(prompt('Em quantas parcelas você gostaria de pagar seu empréstimo? Nós oferecemos parcelamentos entre 5 e 24 meses.'));
 
     if (parcelas < 5) {
         parcelas = 5;
